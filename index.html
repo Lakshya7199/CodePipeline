@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pipeline V1</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, violet, indigo);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            animation: colorChange 1s infinite linear;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            margin: 15% auto;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #3498db, #2980b9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        h1 {
+            color: #fff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        @keyframes colorChange {
+            0% {
+                background: linear-gradient(135deg, violet, indigo);
+            }
+            14% {
+                background: linear-gradient(135deg, indigo, blue);
+            }
+            28% {
+                background: linear-gradient(135deg, blue, green);
+            }
+            42% {
+                background: linear-gradient(135deg, green, yellow);
+            }
+            57% {
+                background: linear-gradient(135deg, yellow, orange);
+            }
+            71% {
+                background: linear-gradient(135deg, orange, red);
+            }
+            85% {
+                background: linear-gradient(135deg, red, violet);
+            }
+            100% {
+                background: linear-gradient(135deg, violet, indigo);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You have successfully made the pipeline V1</h1>
+    </div>
+</body>
+</html>
